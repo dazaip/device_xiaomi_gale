@@ -16,6 +16,12 @@ $(call inherit-product, vendor/braze/config/common_full_phone.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
 
+# configurações extras
+WITH_GAPPS := true
+TARGET_SUPPORTS_BLUR := true
+BLAZE_BUILD_TYPE := UNOFFICIAL
+BLAZE_MAINTAINER := ROKUROzz
+
 PRODUCT_NAME := braze_gale
 PRODUCT_DEVICE := gale
 PRODUCT_MANUFACTURER := Xiaomi
