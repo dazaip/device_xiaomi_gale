@@ -226,3 +226,80 @@ ro.vendor.wifi.sap.interface=ap0
 ro.vendor.wlan.chrdev=wmt_chrdev_wifi
 ro.vendor.wlan.gen=gen4m
 
+# melhorias no gerenciamento de recursos do sistema
+debug.performance.tuning=1
+debug.sf.disable_client_composition_cache=1
+debug.renderengine.backend=skiaglthreaded
+dalvik.vm.systemuicompilerfilter=speed-profile
+dalvik.vm.systemservercompilerfilter=speed-profile
+persist.android.strictmode=0
+
+# gerenciamento de RAM
+persist.sys.purgeable_assets=1
+persist.service.pcsync.enable=0
+persist.service.lgospd.enable=0
+
+# bateria
+ro.ril.sensor.sleep.control=1
+wifi.supplicant_scan_interval=180
+
+# melhorias de rede
+net.tcp.buffersize.hsdpa=6144,262144,1048576,6144,262144,1048576
+net.tcp.buffersize.hspa=6144,87380,262144,6144,16384,262144
+net.tcp.buffersize.lte=262144,524288,3145728,262144,524288,3145728
+net.tcp.buffersize.umts=6144,87380,110208,6144,16384,110208
+net.tcp.buffersize.wifi=262144,524288,1048576,262144,524288,1048576
+
+# desabilita recursos de localização
+ro.com.google.locationfeatures=0
+ro.com.google.networklocation=0
+
+# aumentar a velocidade de inicialização
+ro.config.hw_quickpoweron=true
+persist.sys.shutdown.mode=hibernate
+
+# desativa logs do sistema
+logcat.live=disablV
+profiler.force_disable_err_rpt=1
+profiler.force_disable_ulog=1
+ro.kernel.android.checkjni=0
+ro.kernel.checkjni=0e
+ro.config.nocheckin=1
+
+# desabilita erros do kernel e sistema
+profiler.force_disable_err_rpt=1
+profiler.force_disable_ulog=1
+ro.kernel.android.checkjni=0
+ro.kernel.checkjni=0
+
+# melhorias do toque na tela
+ro.min_pointer_dur=8
+ro.max.fling_velocity=12000
+windowsmgr.max_events_per_sec=120
+
+# manter o lunch na memoria
+ro.HOME_APP_ADJ=1
+
+# aceleração de video GPU
+video.accelerate.hw=1
+
+# minimizar relatorios de depuração
+ro.kernel.android.checkjni=0
+ro.config.checkjni=0
+profiler.hung.dumpdobugreport=false
+debug.mdpcomp.logs=0
+profiler.debugmonitor=false
+logcat.live=disable
+ro.logd.kernel=false
+persist.logd.size.radio=OFF
+persist.logd.size.system=OFF
+logd.logpersistd.enable=false
+logd.statistics=0
+ro.statsd.enable=0
+vidc.debug.level=0
+debug.atrace.tags.enableflags=0
+ro.logdumpd.enabled=0
+
+# melhorias de renderização
+debug.composition.type=gpu
+hwui.use_gpu=true
