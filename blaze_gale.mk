@@ -12,21 +12,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/gale/device.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/pixelstar/config/common_full_phone.mk)
+$(call inherit-product, vendor/braze/config/common_full_phone.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# configs device
-TARGET_USES_BLUR_RECENT := false
-TARGET_FACE_UNLOCK_SUPPORTED := true
-ADD_CUSTOM_APPS := true
-USE_PIXEL_CHARGER := true
-TARGET_INCLUDE_LIVE_WALLPAPERS := false
-TARGET_SUPPORTS_QUICK_TAP  := true
-TARGET_SUPPORTS_PREBUILT_UPDATABLE_APEX := false
-TARGET_SUPPORTS_GOOGLE_BATTERY := false
-
-PRODUCT_NAME := pixelstar_gale
+PRODUCT_NAME := braze_gale
 PRODUCT_DEVICE := gale
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
