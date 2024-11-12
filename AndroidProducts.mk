@@ -5,5 +5,5 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/braze_gale.mk
+    $(LOCAL_DIR)/blaze_gale.mk
 
