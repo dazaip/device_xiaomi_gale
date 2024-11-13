@@ -259,17 +259,14 @@ ro.config.hw_quickpoweron=true
 persist.sys.shutdown.mode=hibernate
 
 # desativa logs do sistema
-logcat.live=disablV
+logcat.live=disable
 profiler.force_disable_err_rpt=1
 profiler.force_disable_ulog=1
 ro.kernel.android.checkjni=0
-ro.kernel.checkjni=0e
 ro.config.nocheckin=1
 
 # desabilita erros do kernel e sistema
-profiler.force_disable_err_rpt=1
 profiler.force_disable_ulog=1
-ro.kernel.android.checkjni=0
 ro.kernel.checkjni=0
 
 # melhorias do toque na tela
@@ -285,11 +282,9 @@ video.accelerate.hw=1
 
 # minimizar relatorios de depuração
 ro.kernel.android.checkjni=0
-ro.config.checkjni=0
 profiler.hung.dumpdobugreport=false
 debug.mdpcomp.logs=0
 profiler.debugmonitor=false
-logcat.live=disable
 ro.logd.kernel=false
 persist.logd.size.radio=OFF
 persist.logd.size.system=OFF
