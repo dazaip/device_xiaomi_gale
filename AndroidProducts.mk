@@ -5,5 +5,5 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/blaze_gale.mk
+    $(LOCAL_DIR)/aosp_gale.mk
 
