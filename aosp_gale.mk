@@ -12,18 +12,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/gale/device.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/blaze/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
-TARGET_BOOT_ANIMATION_RES := 720
-
-# configurações extras
-TARGET_FACE_UNLOCK_SUPPORTED := true
-WITH_GAPPS := true
-TARGET_SUPPORTS_BLUR := true
-BLAZE_BUILD_TYPE := UNOFFICIAL
-BLAZE_MAINTAINER := ROKUROzz
-
-PRODUCT_NAME := blaze_gale
+PRODUCT_NAME := aosp_gale
 PRODUCT_DEVICE := gale
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
